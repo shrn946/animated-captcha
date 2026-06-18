@@ -1,0 +1,81 @@
+.wpcf7-animated-captcha-container {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.wpcf7-animated-captcha-container .canvas-wrapper {
+    display: block;
+    line-height: 0;
+    background: #f8f9fa;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    border: 1px solid #e1e4e8;
+    overflow: hidden;
+    width: 100%;
+}
+
+.wpcf7-animated-captcha-container .canvas-wrapper:hover {
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transform: translateY(-1px);
+    border-color: #d1d5da;
+}
+
+.wpcf7-animated-captcha-container canvas {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wpcf7-animated-captcha-input {
+    padding: 14px 18px !important;
+    border: 2px solid #e1e4e8 !important;
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    transition: all 0.25s ease !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    outline: none !important;
+    background: #ffffff !important;
+    color: #24292e !important;
+    margin: 0 !important;
+}
+
+.wpcf7-animated-captcha-input:focus {
+    border-color: #007cba !important;
+    box-shadow: 0 0 0 4px rgba(0, 124, 186, 0.15) !important;
+    background-color: #fff !important;
+}
+
+.wpcf7-animated-captcha-input::placeholder {
+    color: #959da5;
+}
+
+.wpcf7-not-valid .wpcf7-animated-captcha-input {
+    border-color: #dc3232 !important;
+}
+
+.wpcf7-not-valid .wpcf7-animated-captcha-input:focus {
+    box-shadow: 0 0 0 4px rgba(220, 50, 50, 0.15) !important;
+}
+
+.wpcf7-not-valid-tip {
+    color: #dc3232;
+    font-size: 13px;
+    margin-top: 4px;
+    display: block;
+    font-weight: 500;
+}
+
+@media (max-width: 480px) {
+    .wpcf7-animated-captcha-container {
+        width: 100% !important;
+    }
+}
